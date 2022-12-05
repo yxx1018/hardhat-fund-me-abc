@@ -1,0 +1,12 @@
+{
+    "extends": "solhint:default",
+    "plugins": [],
+    "rules": {
+        "avoid-throw": "error",
+        "avoid-suicide": "error",
+        "avoid-sha3": "warn",
+        "func-visibility": "off",
+        "func-name-mixedcase": "warn",
+        "event-name-camelcase": "warn"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "name": "fund-me-abc",
+    "author": {
+        "name": "xiaoxiong"
+    },
+    "version": "1.0.0",
+    "license": "MIT",
+    "devDependencies": {
+        "@chainlink/contracts": "^0.5.1",
+        "@ethersproject/abi": "^5.4.7",
+        "@ethersproject/providers": "^5.4.7",
+        "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+        "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+        "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+        "@nomiclabs/hardhat-etherscan": "^3.0.0",
+        "@typechain/ethers-v5": "^10.1.0",
+        "@typechain/hardhat": "^6.1.2",
+        "chai": "^4.3.7",
+        "deploy": "^1.0.3",
+        "ethers": "^5.7.2",
+        "hardhat-deploy": "^0.11.20",
+        "hardhat-gas-reporter": "^1.0.8",
+        "solidity-coverage": "^0.8.0",
+        "typechain": "^8.1.0"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "hardhat": "^2.12.3",
+        "prettier": "^2.8.0",
+        "prettier-plugin-solidity": "^1.0.0",
+        "solhint": "^3.3.7"
+    },
+    "scripts": {
+        "test": "hardhat test",
+        "test:staging": "hardhat test --network goerli",
+        "lint": "solhint 'contracts/**/*.sol'",
+        "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+        "format": "prettier --write .",
+        "coverage": "hardhat coverage"
+    }
+}
